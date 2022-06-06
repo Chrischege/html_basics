@@ -1,0 +1,83 @@
+<!-- There are a few notable differences with the html5 language below is the structure
+New elements in HTML5 include;- article,aside,audio,canvas,datalist,details,embed,footer,header,nav,output,progress,section,video, and more.
+NEW IN HTML5
+1. (forms)- the web 2.0 specification allows for creation of more powerful forms and more compelling user experience
+          - date pickers, color pickers, and numeric stepper controls have been added.
+          - the input field types now include email, search, and URL.
+          - PUT and DELETE form methods are now supported.
+2. (integrated API - application programming interface)
+          - drag and drop
+          - audio and video
+          - offline web applications
+          - history
+          - local storage
+          - geolocation
+          - web messaging
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    status: <progress>
+        min="0" max="100" value="30"
+    </progress>
+    <svg width='1000' height='1000'>
+        <circle cx="80" cy="80" r="50" fill="green" />
+    </svg>
+
+    <svg width='1000' height='1000'>        
+        <rect width="150" height="150" fill="orange"> <animate attributeName="x" from="0" to="300"
+        dur="3s" fill="freeze" repeatCount="2"/>
+    </svg>
+    <input type="search" id="mysearch" name="search item" >
+    <input type="text" id="cars" list="colors">
+    <datalist id="colors">
+        <option value="red">
+        <option value="green">
+    </datalist>
+<body>
+    
+</body>
+</html>
+
+<!-- progress element allows for creation of progress bars on the web
+web storage API - it allows storage of data on a users local computer. before html5 we had to use javascript cookies to achieve this functionality.
+
+(advantages of web storage)
+1. more secure
+2. faster
+3. stores a larger amount of data 
+4. stored data is not sent with every server request 
+--All storage is per domain and all pages from one domain can store and access the same data.
+
+(types of web storage objects)
+1. session storage()- session storage is destroyed once the user exits the browser.
+2. local storage() - stores data with no expiration
+-- You need to familiarize with javascript in order to use the api.
+
+the syntax for the web storage is very clear. data is stored as a key value pairs. The same syntax applies to the session storage and only change the name localstorage to sessionstorage
+
+1. storing a value - localstorage.setitem("key1", "value1");
+2. getting a value - alert(localstorage.getitem("key1"));  this will print the value.
+3. removing a value - localstorage.removeitem("key1");
+4. removing all values - localstorage.clear();
+-->
+
+<!-- GEOLOCATION API - used to get the users current location.
+    the main method is the getCurrentPosition which retrieves the current geolocation of the user's device.
+
+    (parameter)
+    1. showlocation - mandatory
+    2. errorhandler - optional
+    3. options - optional
+
+ User location can be presented in two ways; geodetic and civic. 
+ geodetic describes directly the latitude and longitude.
+ civic describes a format that is easily understood by the average person.
+-->
+
